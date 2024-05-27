@@ -1,1 +1,45 @@
-# Data-Analysis
+## ALGORITHMS & DATA STRUCTURES
+# Project Overview
+In this project, we apply our knowledge of algorithms and data structures to analyze a dataset containing the purchase history of a hypothetical Students' Union. The analysis is implemented using a Jupyter Notebook provided on Moodle, and the code is enhanced with clear and concise comments for readability and understanding.
+
+Dataset Description
+The dataset is a list of dictionaries, with each dictionary representing a single purchase. Each purchase contains the following information:
+
+Name: The name of the student (string). Each name is assumed to be unique, although multiple purchases can be associated with the same name.
+Date: The date of the purchase (tuple of three integers: DD, MM, YYYY). The dataset includes purchases made between January 1st, 2023, and May 1st, 2023.
+Item: The name of the purchased item (string).
+Unit Price: The price per unit of the item (floating-point number in Euros).
+Quantity: The number of items purchased (integer).
+Project Tasks
+Information Extraction
+Recency: Calculate the number of days since each student's latest purchase, using May 1st, 2023, as the current date.
+Frequency: Calculate the total number of purchases made by each student within the given date interval.
+Monetary Value: Calculate the total amount spent by each student on purchases within the given date interval.
+Data Visualization
+Plot histograms for recency, frequency, and monetary value using Matplotlib.
+Sorting and Scoring
+First RFM Score (RFM):
+
+Recency: Sort students by recency and divide into three equal parts. Assign scores: 3 for the most recent, 2 for the middle, and 1 for the least recent.
+Frequency: Sort students by frequency and divide into three equal parts. Assign scores: 3 for the most frequent, 2 for the middle, and 1 for the least frequent.
+Monetary Value: Sort students by monetary value and divide into three equal parts. Assign scores: 3 for the highest spenders, 2 for the middle, and 1 for the lowest spenders.
+Combine the scores to get the RFM score and sort students in descending order of their RFM scores.
+Second RFM Score (RFM'):
+
+Recency: Rank students by recency and divide into three buckets.
+Frequency: Within each recency bucket, rank students by frequency and create three frequency buckets.
+Monetary Value: Within each frequency bucket, rank students by monetary value and create three monetary buckets.
+Recalculate the RFM scores and use scipy.stats.spearmanr to correlate RFM and RFM'.
+Searching
+Linear Search: Find the RFM scores of your group members using linear search.
+Binary Search:
+Sort students in alphabetical order.
+Search for your group members using binary search and find their RFM scores.
+Compare the time taken for linear search and binary search using the timeit module.
+Libraries and Restrictions
+You are allowed to use NumPy and Matplotlib for this project.
+The use of pandas is not permitted.
+Conclusion
+Through this project, we aim to determine the most valuable students to the Students' Union based on their purchase history, using efficient algorithms for extraction, sorting, and searching. The insights gained will help us understand student buying behaviors and identify key customers.
+
+Feel free to explore the code in the provided Jupyter Notebook and refer to the comments for detailed explanations of each step.
