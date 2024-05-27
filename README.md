@@ -1,6 +1,6 @@
 # ALGORITHMS & DATA STRUCTURES IN PYTHON
 ## Project Overview
-In this project, we apply our knowledge of algorithms and data structures to analyze a dataset containing the purchase history of a hypothetical Students' Union. The analysis is implemented using a Jupyter Notebook provided on Moodle, and the code is enhanced with clear and concise comments for readability and understanding.
+In this project, we apply our knowledge of algorithms and data structures to analyze a dataset containing the purchase history of a hypothetical Students' Union. The analysis is implemented using a Jupyter Notebook provided by the professor, and the code is enhanced with clear and concise comments for readability and understanding.
 
 ## Dataset Description
 The dataset is a list of dictionaries, with each dictionary representing a single purchase. Each purchase contains the following information:
